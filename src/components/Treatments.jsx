@@ -75,7 +75,7 @@ const Treatments = () => {
 
                 <div className="mt-6">
                   <Link
-                    to="/tratamientos"
+                    to="/tratamientos#top"
                     className="inline-flex items-center gap-2 text-base font-semibold text-blue-700 transition hover:text-blue-900"
                   >
                     Más información →
@@ -92,7 +92,7 @@ const Treatments = () => {
           </p>
 
           <Link
-            to="/tratamientos"
+            to="/tratamientos#top"
             className="mt-5 inline-flex items-center rounded-xl bg-blue-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-blue-800"
           >
             Ver todos los tratamientos

@@ -2,17 +2,20 @@ const treatments = [
   {
     name: 'Implantes + corona',
     price: '1.500 €',
-    image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Endodoncia',
     price: '220 €',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Fundas porcelana',
     price: '240 €',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Fundas zirconio',
@@ -22,7 +25,8 @@ const treatments = [
   {
     name: 'Frenillo de lengua',
     price: '400 €',
-    image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Tratamiento encías',
@@ -43,7 +47,8 @@ const treatments = [
   {
     name: 'Limpieza',
     price: '70 €',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Empastes',
@@ -65,7 +70,10 @@ const treatments = [
 
 const AllTreatments = () => {
   return (
-    <main className="bg-[#f4f8ff] pt-32 pb-20">
+    <main
+      id="top"
+      className="bg-[#f4f8ff] pt-32 pb-20"
+    >
       <section className="mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-12 max-w-4xl text-center">
           <span className="inline-flex rounded-full bg-blue-700 px-5 py-2 text-sm font-bold text-white">
@@ -126,46 +134,6 @@ const AllTreatments = () => {
               </div>
             </article>
           ))}
-        </div>
-
-        <div className="mx-auto mt-14 max-w-5xl rounded-3xl bg-white px-8 py-10 text-center shadow-[0_10px_30px_rgba(37,99,235,0.10)]">
-          <h2 className="text-3xl font-extrabold text-blue-700">
-            ¿Necesitas otro tratamiento?
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-neutral-700">
-            Si necesitas un tratamiento adicional que no aparece en esta página,
-            no dudes en consultar con nuestro equipo. Te atenderemos personalmente
-            en nuestra clínica o llamando al{' '}
-            <a
-              href="tel:686142747"
-              className="inline-block whitespace-nowrap font-extrabold text-blue-700 hover:underline"
-            >
-              686 14 27 47
-            </a>
-            .
-          </p>
-
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
-              href="/#contacto"
-              className="rounded-xl bg-blue-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-blue-800"
-            >
-              Más información
-            </a>
-
-            <a
-              href="tel:686142747"
-              className="rounded-xl border-2 border-blue-700 px-8 py-4 text-lg font-bold text-blue-700 transition hover:bg-blue-700 hover:text-white"
-            >
-              Llamar ahora
-            </a>
-          </div>
-
-          <p className="mt-8 text-sm text-neutral-500">
-            *Los precios y servicios pueden sufrir cambios. Los importes son
-            orientativos y pueden variar según valoración profesional.
-          </p>
         </div>
       </section>
     </main>
