@@ -2,14 +2,16 @@ import { useEffect, useState } from 'react'
 
 const slides = [
   {
-    image: '/clinica-dental-usera-interior.jpeg',
-    alt: 'Interior de Clínica Dental Dr. Jorge Gonzalez Cogollo en Carabanchel',
+    image:
+      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Interior de Clínica Dental Marcos Martínez en Carabanchel',
     badge: 'Clínica dental en Carabanchel con atención cercana y profesional',
   },
   {
-    image: '/dra-anna-tavarone-clinica-dental-usera.png',
-    alt: 'Clínica Dental Dr. Jorge Gonzalez Cogollo en Carabanchel',
-    badge: 'Cuidamos tu sonrisa en C. de Carrero Juan Ramón',
+    image:
+      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Clínica Dental Marcos Martínez en Carabanchel',
+    badge: 'Cuidamos tu sonrisa en Carabanchel, Madrid',
   },
 ]
 
@@ -29,7 +31,7 @@ const WhyUs = () => {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-2">
         <div className="relative">
           <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-blue-700 lg:block [writing-mode:vertical-rl]">
-            Clínica Dental Dr. Jorge Gonzalez Cogollo
+            Clínica Dental Marcos Martínez
           </span>
 
           <div className="max-w-xl">
@@ -42,9 +44,9 @@ const WhyUs = () => {
             </h2>
 
             <p className="mt-6 text-lg leading-9 text-neutral-700">
-              En Clínica Dental Dr. Jorge Gonzalez Cogollo cuidamos tu salud
-              bucodental con una atención cercana, tratamientos personalizados y
-              un trato profesional en Carabanchel, Madrid.
+              En Clínica Dental Marcos Martínez cuidamos tu salud bucodental con
+              una atención cercana, tratamientos personalizados y un trato
+              profesional en Carabanchel, Madrid.
             </p>
 
             <div className="mt-8 space-y-6">
@@ -53,7 +55,7 @@ const WhyUs = () => {
                   Clínica dental en Carabanchel
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Estamos ubicados en C. de Carrero Juan Ramón, 7, Local, con
+                  Estamos ubicados en C. del Camino Viejo de Leganés, 115, con
                   fácil acceso para pacientes de la zona.
                 </p>
               </div>

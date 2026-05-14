@@ -10,8 +10,8 @@ const ContactSection = () => {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-neutral-600">
-            Estamos aquí para ayudarte. Contacta con Clínica Dental Dr. Jorge
-            Gonzalez Cogollo para reservar tu cita.
+            Estamos aquí para ayudarte. Contacta con Clínica Dental Marcos
+            Martínez para reservar tu cita.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold text-blue-700">Dirección</h3>
 
               <p className="mt-2 text-lg text-neutral-600">
-                C. de Carrero Juan Ramón, 7, Local, Carabanchel, 28025 Madrid
+                C. del Camino Viejo de Leganés, 115, Carabanchel, 28019 Madrid
               </p>
             </div>
           </div>
@@ -42,10 +42,10 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold text-blue-700">Teléfono</h3>
 
               <a
-                href="tel:686142747"
+                href="tel:915608109"
                 className="mt-2 block whitespace-nowrap text-lg text-neutral-600 transition hover:text-blue-700"
               >
-                686 14 27 47
+                915 60 81 09
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@ const ContactSection = () => {
               </h3>
 
               <a
-                href="https://wa.me/34686142747"
+                href="https://wa.me/34662671383"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 block text-lg text-neutral-600 transition hover:text-blue-700"
@@ -83,12 +83,12 @@ const ContactSection = () => {
 
               <div className="mt-4 space-y-4 text-base text-neutral-700 sm:text-lg">
                 {[
-                  ['Lunes', '10:00–14:00 · 16:00–20:00'],
-                  ['Martes', '10:00–14:00 · 16:00–20:00'],
-                  ['Miércoles', '10:00–14:00 · 16:00–20:00'],
-                  ['Jueves', '10:00–14:00 · 16:00–20:00'],
-                  ['Viernes', '10:00–14:00 · 16:00–20:00'],
-                  ['Sábado', '10:00–14:00'],
+                  ['Lunes', '10:00–13:00 · 16:30–20:00'],
+                  ['Martes', '10:00–13:00 · 16:30–20:00'],
+                  ['Miércoles', '10:00–13:00 · 18:30–20:00'],
+                  ['Jueves', '10:00–13:00 · 16:30–20:00'],
+                  ['Viernes', '10:00–13:00'],
+                  ['Sábado', 'Cerrado'],
                   ['Domingo', 'Cerrado'],
                 ].map(([day, hours]) => (
                   <div

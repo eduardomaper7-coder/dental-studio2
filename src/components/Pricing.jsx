@@ -4,24 +4,32 @@ const plans = [
     price: '80€',
     subtitle: 'Tratamiento conservador para reparar caries o pequeñas fracturas.',
     badge: 'Precio orientativo',
+    image:
+      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Endodoncia',
     price: '220€',
     subtitle: 'Tratamiento para salvar dientes dañados o con infección.',
     badge: 'Desde',
+    image:
+      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Funda de porcelana',
     price: '270€',
     subtitle: 'Solución estética y resistente para proteger y mejorar el diente.',
     badge: 'Desde',
+    image:
+      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Funda de zirconio',
     price: '420€',
     subtitle: 'Opción funcional y estética adaptada a las necesidades de cada paciente.',
     badge: 'Desde',
+    image:
+      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -30,7 +38,7 @@ const conditions = [
   'Cada tratamiento requiere una valoración previa personalizada.',
   'El presupuesto final puede variar según las necesidades de cada paciente.',
   'Antes de comenzar, te explicaremos el tratamiento, las opciones disponibles y el precio final.',
-  'Consulta con Clínica Dental Dr. Jorge Gonzalez Cogollo para conocer más tratamientos y tarifas.',
+  'Consulta con Clínica Dental Marcos Martínez para conocer más tratamientos y tarifas.',
 ]
 
 const Pricing = () => {
@@ -47,9 +55,9 @@ const Pricing = () => {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-neutral-600">
-            En Clínica Dental Dr. Jorge Gonzalez Cogollo queremos que tengas una
-            referencia clara antes de venir. Estos precios son orientativos y
-            pueden variar según cada caso.
+            En Clínica Dental Marcos Martínez queremos que tengas una referencia
+            clara antes de venir. Estos precios son orientativos y pueden variar
+            según cada caso.
           </p>
         </div>
 
@@ -57,25 +65,36 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <article
               key={index}
-              className="relative overflow-hidden rounded-2xl bg-white px-6 py-8 text-center shadow-[0_10px_30px_rgba(37,99,235,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(37,99,235,0.12)]"
+              className="relative overflow-hidden rounded-2xl bg-white text-center shadow-[0_10px_30px_rgba(37,99,235,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(37,99,235,0.12)]"
             >
-              {plan.badge && (
-                <span className="absolute right-4 top-4 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">
-                  {plan.badge}
-                </span>
-              )}
+              <div className="h-44 overflow-hidden">
+                <img
+                  src={plan.image}
+                  alt={`${plan.title} en Clínica Dental Marcos Martínez`}
+                  className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
 
-              <h3 className="mt-6 text-xl font-extrabold text-blue-700">
-                {plan.title}
-              </h3>
+              <div className="relative px-6 py-8">
+                {plan.badge && (
+                  <span className="absolute right-4 top-4 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">
+                    {plan.badge}
+                  </span>
+                )}
 
-              <p className="mt-5 text-5xl font-extrabold tracking-tight text-blue-700">
-                {plan.price}
-              </p>
+                <h3 className="mt-6 text-xl font-extrabold text-blue-700">
+                  {plan.title}
+                </h3>
 
-              <p className="mt-4 text-base leading-7 text-neutral-600">
-                {plan.subtitle}
-              </p>
+                <p className="mt-5 text-5xl font-extrabold tracking-tight text-blue-700">
+                  {plan.price}
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-neutral-600">
+                  {plan.subtitle}
+                </p>
+              </div>
             </article>
           ))}
         </div>

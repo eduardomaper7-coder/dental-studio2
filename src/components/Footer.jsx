@@ -14,7 +14,7 @@ const Footer = () => {
                 CLÍNICA DENTAL
               </span>
               <span className="block text-lg font-semibold text-blue-600">
-                Dr. Jorge Gonzalez Cogollo
+                Marcos Martínez
               </span>
             </div>
 
@@ -25,13 +25,27 @@ const Footer = () => {
             </p>
 
             <div className="mt-8 flex items-center gap-5">
-              <a href="#" aria-label="Facebook" className="text-2xl text-blue-600 transition hover:text-white">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="text-2xl text-blue-600 transition hover:text-white"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" aria-label="Instagram" className="text-2xl text-blue-600 transition hover:text-white">
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="text-2xl text-blue-600 transition hover:text-white"
+              >
                 <FaInstagram />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-2xl text-blue-600 transition hover:text-white">
+
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="text-2xl text-blue-600 transition hover:text-white"
+              >
                 <FaLinkedinIn />
               </a>
             </div>
@@ -39,26 +53,29 @@ const Footer = () => {
 
           {/* Contacto */}
           <div className="text-left md:text-right">
-            <h3 className="text-3xl font-bold text-blue-600">Contacto</h3>
+            <h3 className="text-3xl font-bold text-blue-600">
+              Contacto
+            </h3>
 
             <div className="mt-6 space-y-4 text-lg leading-relaxed">
               <p>
-                C. de Carrero Juan Ramón, 7, Local<br />
-                Carabanchel, 28025 Madrid
+                C. del Camino Viejo de Leganés, 115
+                <br />
+                Carabanchel, 28019 Madrid
               </p>
 
               <p>
                 <a
-                  href="tel:686142747"
+                  href="tel:915608109"
                   className="whitespace-nowrap font-bold text-white transition hover:text-blue-600"
                 >
-                  686 14 27 47
+                  915 60 81 09
                 </a>
               </p>
 
               <p>
                 <a
-                  href="https://wa.me/34686142747"
+                  href="https://wa.me/34662671383"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 transition hover:text-white"
@@ -87,7 +104,7 @@ const Footer = () => {
         {/* Footer bottom */}
         <div className="mt-12 border-t border-white/15 pt-8 text-center">
           <p className="text-base text-white/80">
-            © 2026 Clínica Dental Dr. Jorge Gonzalez Cogollo. Todos los derechos reservados.
+            © 2026 Clínica Dental Marcos Martínez. Todos los derechos reservados.
           </p>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-blue-600">

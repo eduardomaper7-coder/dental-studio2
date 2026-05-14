@@ -1,7 +1,7 @@
 const Hero = () => {
-  const whatsappNumber = '34686142747'
+  const whatsappNumber = '34662671383'
   const whatsappMessage = encodeURIComponent(
-    'Hola, quiero pedir cita en Clínica Dental Dr. Jorge Gonzalez Cogollo.'
+    'Hola, quiero pedir cita en Clínica Dental Marcos Martínez.'
   )
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
@@ -12,7 +12,8 @@ const Hero = () => {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/hero-dentista-usera.png')",
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -29,7 +30,7 @@ const Hero = () => {
           </span>
 
           <span className="mt-1 max-w-full break-words text-xl font-extrabold tracking-wide text-white sm:text-3xl md:text-4xl">
-            CLÍNICA DENTAL DR. JORGE GONZALEZ COGOLLO
+            CLÍNICA DENTAL MARCOS MARTÍNEZ
           </span>
         </div>
 
@@ -43,9 +44,9 @@ const Hero = () => {
         </h1>
 
         <p className="mt-6 hidden max-w-3xl text-lg leading-9 text-white/90 sm:block sm:text-xl">
-          En Clínica Dental Dr. Jorge Gonzalez Cogollo cuidamos tu salud
-          bucodental con una atención cercana, tratamientos personalizados y un
-          equipo comprometido con tu bienestar dental en Carabanchel, Madrid.
+          En Clínica Dental Marcos Martínez cuidamos tu salud bucodental con una
+          atención cercana, tratamientos personalizados y un equipo comprometido
+          con tu bienestar dental en Carabanchel, Madrid.
         </p>
 
         <div className="mt-6 flex w-full max-w-full flex-col gap-2 sm:mt-8 sm:w-auto sm:flex-row sm:gap-3">
@@ -64,7 +65,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-full min-w-0 items-center justify-center gap-3 rounded-xl bg-blue-600 px-4 py-4 text-sm font-extrabold text-white shadow-xl transition hover:bg-blue-700 sm:w-auto sm:px-8 sm:text-lg"
-            aria-label="Pedir cita por WhatsApp en Clínica Dental Dr. Jorge Gonzalez Cogollo"
+            aria-label="Pedir cita por WhatsApp en Clínica Dental Marcos Martínez"
           >
             <img
               src="/whatsapp.png"
@@ -76,15 +77,13 @@ const Hero = () => {
           </a>
 
           <a
-            href="tel:686142747"
+            href="tel:915608109"
             className="flex w-full min-w-0 items-center justify-center rounded-xl bg-white/95 px-4 py-4 text-sm font-extrabold text-blue-700 shadow-xl transition hover:bg-white sm:w-auto sm:px-8 sm:text-lg sm:whitespace-nowrap"
-            aria-label="Llamar a Clínica Dental Dr. Jorge Gonzalez Cogollo"
+            aria-label="Llamar a Clínica Dental Marcos Martínez"
           >
             Llamar ahora
           </a>
         </div>
-
-       
 
         <a
           href="#servicios"
@@ -107,7 +106,7 @@ const Hero = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 shadow-2xl transition hover:scale-110 hover:bg-blue-700 sm:h-16 sm:w-16"
-        aria-label="Escribir por WhatsApp a Clínica Dental Dr. Jorge Gonzalez Cogollo"
+        aria-label="Escribir por WhatsApp a Clínica Dental Marcos Martínez"
       >
         <img
           src="/whatsapp.png"

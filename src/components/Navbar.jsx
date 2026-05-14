@@ -4,12 +4,12 @@ const Navbar = () => {
       <div className="fixed top-0 z-50 w-full bg-blue-700 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-center px-3 py-1 text-center text-[11px] sm:text-sm">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=C.+de+Carrero+Juan+Ram%C3%B3n+7+Carabanchel+28025+Madrid"
+            href="https://www.google.com/maps/search/?api=1&query=C.+del+Camino+Viejo+de+Legan%C3%A9s+115+Carabanchel+28019+Madrid"
             target="_blank"
             rel="noopener noreferrer"
             className="truncate hover:underline"
           >
-            📍 C. de Carrero Juan Ramón, 7, Local, Carabanchel, 28025 Madrid
+            📍 C. del Camino Viejo de Leganés, 115, Carabanchel, 28019 Madrid
           </a>
         </div>
       </div>
@@ -22,14 +22,14 @@ const Navbar = () => {
                 Clínica Dental
               </span>
               <span className="block text-[11px] font-semibold text-blue-600 md:hidden">
-                Dr. Jorge Gonzalez Cogollo
+                Marcos Martínez
               </span>
 
               <span className="hidden text-sm font-extrabold text-blue-700 md:block md:text-xl">
                 CLÍNICA DENTAL
               </span>
               <span className="hidden text-sm font-semibold text-blue-600 md:block">
-                Dr. Jorge Gonzalez Cogollo
+                Marcos Martínez
               </span>
             </div>
           </a>
@@ -65,10 +65,10 @@ const Navbar = () => {
           </nav>
 
           <a
-            href="tel:686142747"
+            href="tel:915608109"
             className="whitespace-nowrap rounded-lg bg-blue-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-blue-700 md:px-5 md:py-2.5 md:text-sm"
           >
-            📞 <span className="hidden md:inline">Llama al</span> 686 14 27 47
+            📞 <span className="hidden md:inline">Llama al</span> 915 60 81 09
           </a>
         </div>
       </header>

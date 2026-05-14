@@ -10,20 +10,20 @@ const Location = () => {
 
         {/* Dirección */}
         <p className="mt-6 text-lg font-medium text-neutral-700">
-          C. de Carrero Juan Ramón, 7, Local, Carabanchel, 28025 Madrid
+          C. del Camino Viejo de Leganés, 115, Carabanchel, 28019 Madrid
         </p>
 
         {/* Mapa */}
         <div className="mt-10 overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(37,99,235,0.1)]">
           <iframe
-            src="https://www.google.com/maps?q=C.%20de%20Carrero%20Juan%20Ram%C3%B3n%207%2C%20Carabanchel%2C%2028025%20Madrid&output=embed"
+            src="https://www.google.com/maps?q=C.%20del%20Camino%20Viejo%20de%20Legan%C3%A9s%20115%2C%20Carabanchel%2C%2028019%20Madrid&output=embed"
             width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación Clínica Dental Dr. Jorge Gonzalez Cogollo"
+            title="Ubicación Clínica Dental Marcos Martínez"
           ></iframe>
         </div>
 

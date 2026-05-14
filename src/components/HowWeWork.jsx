@@ -14,7 +14,7 @@ const features = [
   {
     icon: <FaAward />,
     title: 'Profesionales cualificados',
-    text: 'En Clínica Dental Dr. Jorge Gonzalez Cogollo contamos con profesionales preparados para cuidar tu salud y estética dental.',
+    text: 'En Clínica Dental Marcos Martínez contamos con profesionales preparados para cuidar tu salud y estética dental.',
   },
   {
     icon: <FaUsers />,
@@ -33,8 +33,8 @@ const HowWeWork = () => {
           </h2>
 
           <p className="mt-4 text-neutral-600">
-            En Clínica Dental Dr. Jorge Gonzalez Cogollo cuidamos tu salud
-            bucodental desde el primer momento
+            En Clínica Dental Marcos Martínez cuidamos tu salud bucodental desde
+            el primer momento
           </p>
         </div>
 

@@ -97,8 +97,8 @@ const AllTreatments = () => {
 
           <p className="mt-5 text-lg leading-8 text-neutral-700">
             Consulta algunos de los tratamientos más habituales de Clínica
-            Dental Dr. Jorge Gonzalez Cogollo. Para recibir una valoración
-            personalizada, contacta con nuestra clínica dental en Carabanchel.
+            Dental Marcos Martínez. Para recibir una valoración personalizada,
+            contacta con nuestra clínica dental en Carabanchel.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ const AllTreatments = () => {
               <div className="h-48 overflow-hidden">
                 <img
                   src={treatment.image}
-                  alt={`${treatment.name} en Carabanchel - Clínica Dental Dr. Jorge Gonzalez Cogollo`}
+                  alt={`${treatment.name} en Carabanchel - Clínica Dental Marcos Martínez`}
                   className="h-full w-full object-cover transition duration-500 hover:scale-105"
                   loading="lazy"
                 />

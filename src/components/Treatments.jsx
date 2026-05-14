@@ -5,25 +5,29 @@ const services = [
     title: 'Fundas de porcelana y zirconio',
     description:
       'Soluciones estéticas y funcionales para proteger dientes debilitados, mejorar la mordida y recuperar una sonrisa natural.',
-    image: '/funda-porcelana-siliconio-usera.jpg',
+    image:
+      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Tratamiento de encías',
     description:
       'Diagnóstico y tratamiento de problemas periodontales para cuidar tus encías, prevenir molestias y conservar tus dientes.',
-    image: '/tratamiento-encias-usera.webp',
+    image:
+      'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Implantes dentales',
     description:
       'Recupera piezas dentales perdidas con soluciones seguras, estables y pensadas para mejorar la masticación y la estética.',
-    image: '/implantes-dentales-usera.jpg',
+    image:
+      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Endodoncia',
     description:
       'Tratamiento para salvar dientes dañados o infectados, aliviar el dolor y evitar la extracción cuando es posible.',
-    image: '/endodoncia-usera.png',
+    image:
+      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -41,9 +45,9 @@ const Treatments = () => {
           </h2>
 
           <p className="mx-auto mt-4 max-w-3xl text-lg text-neutral-600 sm:text-xl">
-            En Clínica Dental Dr. Jorge Gonzalez Cogollo ofrecemos tratamientos
-            dentales personalizados para cuidar tu salud bucodental con atención
-            cercana y profesional en Carabanchel, Madrid.
+            En Clínica Dental Marcos Martínez ofrecemos tratamientos dentales
+            personalizados para cuidar tu salud bucodental con atención cercana
+            y profesional en Carabanchel, Madrid.
           </p>
         </div>
 
@@ -56,7 +60,7 @@ const Treatments = () => {
               <div className="h-56 w-full sm:h-auto sm:w-[40%]">
                 <img
                   src={service.image}
-                  alt={`${service.title} en Carabanchel - Clínica Dental Dr. Jorge Gonzalez Cogollo`}
+                  alt={`${service.title} en Carabanchel - Clínica Dental Marcos Martínez`}
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
