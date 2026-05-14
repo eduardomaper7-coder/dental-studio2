@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
 const treatments = [
   {
     name: 'Implantes + corona',
@@ -69,11 +72,19 @@ const treatments = [
 ]
 
 const AllTreatments = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.state?.scrollToTop) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    }
+  }, [location])
+
   return (
-    <main
-      id="top"
-      className="bg-[#f4f8ff] pt-32 pb-20"
-    >
+    <main className="bg-[#f4f8ff] pt-32 pb-20">
       <section className="mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-12 max-w-4xl text-center">
           <span className="inline-flex rounded-full bg-blue-700 px-5 py-2 text-sm font-bold text-white">
