@@ -27,7 +27,6 @@ const Home = () => (
     <FeaturedBox />
     <HowWeWork />
     <Testimonials />
-    <Pricing />
     <BlogSection />
     <Location />
     <ContactSection />

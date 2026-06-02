@@ -7,10 +7,10 @@ const FeaturedBox = () => {
           {/* Imagen */}
           <div className="h-[260px] w-full lg:h-[520px] lg:w-[62%]">
             <img
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80"
-              alt="Clínica Dental Marcos Martínez en Carabanchel"
-              className="h-full w-full object-cover"
-            />
+  src="/equipo-clinica.jpg"
+  alt="Equipo de Clínica Dental Marcos Martínez"
+  className="h-full w-full object-cover"
+/>
           </div>
 
           {/* Caja texto */}

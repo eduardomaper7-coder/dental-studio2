@@ -12,8 +12,7 @@ const Hero = () => {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80')",
+        backgroundImage: "url('/mi-foto-fondo.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

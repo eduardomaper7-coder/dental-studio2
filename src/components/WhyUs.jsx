@@ -2,16 +2,19 @@ import { useEffect, useState } from 'react'
 
 const slides = [
   {
-    image:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Interior de Clínica Dental Marcos Martínez en Carabanchel',
-    badge: 'Clínica dental en Carabanchel con atención cercana y profesional',
+    image: '/equipo-1.jpg',
+    alt: 'Equipo Clínica Dental Marcos Martínez',
+    badge: 'Atención cercana y personalizada',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Clínica Dental Marcos Martínez en Carabanchel',
-    badge: 'Cuidamos tu sonrisa en Carabanchel, Madrid',
+    image: '/equipo-2.jpg',
+    alt: 'Dentistas Clínica Dental Marcos Martínez',
+    badge: 'Profesionales con experiencia',
+  },
+  {
+    image: '/equipo-3.jpg',
+    alt: 'Equipo médico de la clínica',
+    badge: 'Comprometidos con tu sonrisa',
   },
 ]
 
