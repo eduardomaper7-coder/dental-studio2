@@ -278,8 +278,7 @@ p { margin: 0 0 1em; }
 .footer-col a:hover { color: #fff; }
 .footer-phones { margin-top: 15px; font-size: 18px; line-height: 1.8; }
 .funding-copy { margin-top: 52px; text-align: center; color: rgba(255,255,255,.65); font-size: 10px; text-transform: uppercase; letter-spacing: .05em; }
-.footer-bottom { display: grid; grid-template-columns: 1fr minmax(320px,620px) 1fr; gap: 30px; align-items: center; padding-top: 16px; }
-.funding-strip { width: 100%; }
+.footer-bottom { display: flex;grid-template-columns: 1fr minmax(320px, 620px) 1fr;gap: 30px;align-items: center;padding-top: 16px;justify-content: center;}.funding-strip { width: 100%; }
 .footer-social { justify-self: end; display: flex; gap: 10px; }
 .footer-social a { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; color: #fff; }
 
