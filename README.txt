@@ -40,3 +40,12 @@ ACTUALIZACIÓN DEL SELECTOR DE IDIOMAS
 - El selector visible usa banderas, nombre completo e indicador de idioma activo.
 - El selector nativo de Google queda oculto y se utiliza únicamente como motor.
 - La traducción se realiza en la misma URL, sin dominios translate.goog.
+
+
+NAVEGACIÓN MÓVIL MEJORADA
+- Menú lateral a pantalla completa con apertura y cierre suaves.
+- Logo visible dentro del panel, enlaces grandes y estado de página activa.
+- Botón de cita, teléfono, correo y ubicación integrados en el menú.
+- Cierre mediante botón, fondo, tecla Escape o selección de enlace.
+- Bloqueo del desplazamiento, foco contenido y atributos ARIA para accesibilidad.
+- El selector de idiomas, WhatsApp y la barra de traducción se ocultan mientras el menú está abierto.

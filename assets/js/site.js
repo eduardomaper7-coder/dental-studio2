@@ -2,21 +2,89 @@
   'use strict';
   const header = document.querySelector('.site-header');
   const menuToggle = document.querySelector('.menu-toggle');
-  if (header && menuToggle) {
-    const closeMenu = () => {
-      header.classList.remove('is-open');
-      document.body.classList.remove('menu-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
-    };
-    menuToggle.addEventListener('click', () => {
-      const open = header.classList.toggle('is-open');
-      document.body.classList.toggle('menu-open', open);
-      menuToggle.setAttribute('aria-expanded', String(open));
-      menuToggle.innerHTML = open ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>' : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+  const mobileNav = document.querySelector('.nav-links');
+  const menuCloseButtons = [...document.querySelectorAll('[data-menu-close]')];
+  const mobileMenuQuery = window.matchMedia('(max-width: 900px)');
+  let lastFocusedElement = null;
+
+  const setMobileMenuAccessibility = open => {
+    if (!mobileNav) return;
+    if (mobileMenuQuery.matches) {
+      mobileNav.setAttribute('aria-hidden', String(!open));
+      if (open) mobileNav.removeAttribute('inert');
+      else mobileNav.setAttribute('inert', '');
+    } else {
+      mobileNav.removeAttribute('aria-hidden');
+      mobileNav.removeAttribute('inert');
+    }
+  };
+
+  const closeMenu = (restoreFocus = true) => {
+    if (!header || !menuToggle) return;
+    const wasOpen = header.classList.contains('is-open');
+    header.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Abrir menú de navegación');
+    setMobileMenuAccessibility(false);
+    if (wasOpen && restoreFocus && lastFocusedElement instanceof HTMLElement) {
+      lastFocusedElement.focus({ preventScroll: true });
+    }
+  };
+
+  const openMenu = () => {
+    if (!header || !menuToggle || !mobileNav) return;
+    lastFocusedElement = document.activeElement;
+    header.classList.add('is-open');
+    document.body.classList.add('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuToggle.setAttribute('aria-label', 'Cerrar menú de navegación');
+    setMobileMenuAccessibility(true);
+    requestAnimationFrame(() => {
+      mobileNav.querySelector('.mobile-nav-close, a')?.focus({ preventScroll: true });
     });
-    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', closeMenu));
-    window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMenu(); });
+  };
+
+  if (header && menuToggle && mobileNav) {
+    setMobileMenuAccessibility(false);
+    menuToggle.addEventListener('click', () => {
+      if (header.classList.contains('is-open')) closeMenu();
+      else openMenu();
+    });
+    menuCloseButtons.forEach(button => button.addEventListener('click', () => closeMenu()));
+    mobileNav.querySelectorAll(':scope > a, .mobile-nav-footer a').forEach(link => {
+      link.addEventListener('click', () => closeMenu(false));
+    });
+    document.addEventListener('keydown', event => {
+      if (!header.classList.contains('is-open')) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeMenu();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      const focusable = [...mobileNav.querySelectorAll('a[href], button:not([disabled])')]
+        .filter(element => !element.hasAttribute('inert') && element.offsetParent !== null);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+    const handleMobileBreakpoint = event => {
+      if (!event.matches) closeMenu(false);
+      setMobileMenuAccessibility(false);
+    };
+    if (typeof mobileMenuQuery.addEventListener === 'function') {
+      mobileMenuQuery.addEventListener('change', handleMobileBreakpoint);
+    } else {
+      mobileMenuQuery.addListener(handleMobileBreakpoint);
+    }
   }
 
   const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 18);
