@@ -26,10 +26,10 @@ ACTUALIZACIÓN DE ANIMACIONES
 
 Último ajuste: las tarjetas destacadas de Inicio son enlaces completos. La imagen, icono, título, descripción y texto “Descubrir” llevan a la especialidad correspondiente.
 
-TRADUCCIÓN
------------
-El selector con banderas usa el traductor clásico de Google dentro de la propia página.
-Al elegir un idioma se guarda la preferencia, se recarga la misma URL y aparece la barra
-superior tradicional de Google. La función requiere que la web esté publicada mediante
-HTTP o HTTPS; no funciona correctamente abriendo los archivos directamente con file://.
-
+TRADUCCIÓN CLÁSICA DE GOOGLE
+----------------------------
+El selector con banderas usa el widget clásico Google Translate Element.
+Al elegir un idioma se guarda la cookie `googtrans` y se recarga la misma URL.
+No redirige a dominios translate.goog ni añade parámetros `_x_tr_*`.
+La barra superior tradicional de Google queda visible mientras la página está traducida.
+Debe probarse en una web publicada por HTTP/HTTPS; no funciona correctamente desde file://.
