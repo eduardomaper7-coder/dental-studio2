@@ -26,10 +26,17 @@ ACTUALIZACIÓN DE ANIMACIONES
 
 Último ajuste: las tarjetas destacadas de Inicio son enlaces completos. La imagen, icono, título, descripción y texto “Descubrir” llevan a la especialidad correspondiente.
 
-TRADUCCIÓN CLÁSICA DE GOOGLE
-----------------------------
-El selector con banderas usa el widget clásico Google Translate Element.
-Al elegir un idioma se guarda la cookie `googtrans` y se recarga la misma URL.
-No redirige a dominios translate.goog ni añade parámetros `_x_tr_*`.
-La barra superior tradicional de Google queda visible mientras la página está traducida.
-Debe probarse en una web publicada por HTTP/HTTPS; no funciona correctamente desde file://.
+
+TRADUCCIÓN GOOGLE CLÁSICA (BARRA INFERIOR)
+- El selector oficial de Google aparece fijo en la parte inferior.
+- Las banderas controlan el selector nativo dentro de la página.
+- No se crean ni abren direcciones translate.goog.
+- No se comprueba el protocolo HTTP/HTTPS.
+- Español limpia la traducción y recarga exactamente la misma URL.
+
+
+ACTUALIZACIÓN DEL SELECTOR DE IDIOMAS
+- La barra inferior clásica se mantiene.
+- El selector visible usa banderas, nombre completo e indicador de idioma activo.
+- El selector nativo de Google queda oculto y se utiliza únicamente como motor.
+- La traducción se realiza en la misma URL, sin dominios translate.goog.
